@@ -20,7 +20,7 @@ fun Route.listProducts() {
                     "Jacket para el frio",
                     "sadsfdgfhgjhkjhdsfdsfsdfsdfdsfsd",
                     200.00 + it,
-                    "http://localhost:8080/img/jacket.jpg"
+                    "http://192.168.1.71:8080/img/jacket.jpg"
                 )
             )
 
@@ -31,7 +31,7 @@ fun Route.listProducts() {
                     "Hoodie para verte super cool",
                     "sadsfdgfhgjhkjhdsfdsfsdfsdfdsfsd",
                     200.00 + it,
-                    "http://localhost:8080/img/hoodie.jpg"
+                    "http://192.168.1.71:8080/img/hoodie.jpg"
                 )
             )
 
@@ -42,7 +42,7 @@ fun Route.listProducts() {
                     "Para una buena taza de cafe",
                     "sadsfdgfhgjhkjhdsfdsfsdfsdfdsfsd",
                     200.00 + it,
-                    "http://localhost:8080/img/cup.jpg"
+                    "http://192.168.1.71:8080/img/cup.jpg"
                 )
             )
 
@@ -53,7 +53,7 @@ fun Route.listProducts() {
                     "sientete comodo",
                     "sadsfdgfhgjhkjhdsfdsfsdfsdfdsfsd",
                     200.00 + it,
-                    "http://localhost:8080/img/t-shirt.jpg"
+                    "http://192.168.1.71:8080/img/t-shirt.jpg"
                 )
             )
         }
