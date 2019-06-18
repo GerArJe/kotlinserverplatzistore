@@ -6,6 +6,9 @@ import io.ktor.features.CallLogging
 import io.ktor.http.ContentType
 import io.ktor.http.DEFAULT_PORT
 import io.ktor.http.HttpStatusCode
+import io.ktor.http.content.file
+import io.ktor.http.content.files
+import io.ktor.http.content.static
 import io.ktor.request.receiveText
 import io.ktor.response.respondText
 import io.ktor.routing.get
@@ -22,6 +25,11 @@ fun Application.main() {
     install(CallLogging)
 
     routing {
+
+        static("static"){
+            files("images/")
+        }
+
         get("/me") {
             val name = call.request.queryParameters["name"]
             val age = call.request.queryParameters["age"]
@@ -49,6 +57,10 @@ fun Application.main() {
             println(messagepost)
             call.respondText("ok", ContentType.Text.Html, HttpStatusCode.OK)
         }
+
+        getImages()
+
+        listProducts()
     }
 }
 
